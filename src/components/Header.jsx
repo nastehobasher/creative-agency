@@ -8,8 +8,8 @@ const Header = () => {
     { path: "#contact-us", display: "Contact Us" },
   ];
   return (
-    <header className="w-full h-20">
-      <div className=" w-3/4 px-2 m-auto mt-4 border-2	border-white">
+    <header className="w-full h-20 mb-0">
+      <div className=" w-4/5 px-2 m-auto mt-4 border-2	border-white">
         <div className="flex items-center justify-between">
           <div className="logo">
             {/* <img src="../images/logo.png" alt="" /> */}
@@ -20,12 +20,12 @@ const Header = () => {
 
           {/* //navigaiton */}
           <div className="">
-            <ul className="flex items-center gap-x-10 list-none">
+            <ul className="flex items-center gap-x-8 list-none">
               {nav_links.map((item, index) => (
                 <li>
                   <a
                     href={item.path}
-                    className="font-normal text-xl cursor-pointer hover:text-orange-700"
+                    className="font-normal text-lg capitalize cursor-pointer hover:text-orange-700"
                   >
                     {item.display}
                   </a>
